@@ -50,7 +50,13 @@ display:flex;
     cursor: pointer;
 }
 
-.throne:hover{
+#throne{
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+#throne:hover{
+    filter:brightness(1.15);
     transform:scale(1.02);
 }
 
