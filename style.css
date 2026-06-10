@@ -28,17 +28,23 @@ display:flex;
 }
 
 #scene1{
-background:black;
+    background:black;
+    overflow:hidden;
 }
 
+
 .throne{
-width:450px;
-cursor:pointer;
-transition:.3s;
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+    cursor:pointer;
+    transition:all .5s ease;
+    filter:brightness(0.95);
 }
 
 .throne:hover{
-transform:scale(1.05);
+    transform:scale(1.02);
+    filter:brightness(1.05);
 }
 
 #scene1 h1{
