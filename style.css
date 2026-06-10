@@ -27,17 +27,19 @@ flex-direction:column;
 display:flex;
 }
 
-#scene1{
-    width:100vw;
-    height:100vh;
+#scene1::after{
+    content:"";
+    position:absolute;
+    inset:0;
 
-    background-image:url("images/throne.jpg");
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-color:black;
+    background:
+    radial-gradient(
+        circle,
+        transparent 40%,
+        rgba(0,0,0,.55) 100%
+    );
 
-    cursor:pointer;
+    pointer-events:none;
 }
 
 
