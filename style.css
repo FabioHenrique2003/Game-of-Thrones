@@ -28,23 +28,24 @@ display:flex;
 }
 
 #scene1{
-    background:black;
+    position:relative;
+    width:100vw;
+    height:100vh;
     overflow:hidden;
+    background:black;
 }
 
 
 .throne{
-    width:100vw;
-    height:100vh;
+    width:100%;
+    height:100%;
     object-fit:cover;
     cursor:pointer;
     transition:all .5s ease;
-    filter:brightness(0.95);
 }
 
 .throne:hover{
     transform:scale(1.02);
-    filter:brightness(1.05);
 }
 
 #scene1 h1{
