@@ -27,12 +27,19 @@ flex-direction:column;
 display:flex;
 }
 
-#scene1{
-    position:relative;
-    width:100vw;
-    height:100vh;
-    overflow:hidden;
-    background:black;
+#scene1::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle,
+        transparent 40%,
+        rgba(0,0,0,.55) 100%
+    );
+
+    pointer-events:none;
 }
 
 
